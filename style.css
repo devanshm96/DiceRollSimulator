@@ -1,0 +1,79 @@
+body{
+    padding:0;
+    margin:0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+ }
+/* .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    gap: 2rem;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+} */
+header{
+    /* padding: 0; */
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.dice{
+    font-size: 7rem;
+    margin: 5px;
+    animation-duration: 1s;
+    /* retains style for the element, even after the animation ends */
+    animation-fill-mode: forwards;
+}
+.roll-animation{
+    animation-name: roll;
+}
+@keyframes roll{
+    0%{
+        transform: rotateY(0deg) rotateX(0);
+    }
+    100%{
+        transform: rotateY(720deg) rotateX(720deg);
+    }
+}
+button{
+    border: none;
+    border-radius: 1rem;
+    width: 180px;
+    height: 70px;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-color: #3492B4;
+    color: #fff;
+    transition: background-color 0.2s ease;
+}
+button:hover{
+    background-color: #2d7b98;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+li{
+    font-size: 1.5rem;
+    padding: .5rem;
+    margin: .5rem;
+    background-color: #f2f2f2;
+    border-radius: .5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
